@@ -45,7 +45,7 @@ def index():
 #     return render_template("result.html",price=np.round(prediction[0],2))
 
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['GET','POST'])
 def predict():
 
     company = request.form.get('company')
